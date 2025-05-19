@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nilesh's Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      header {
+        background: #0d6efd;
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      nav a:hover {
+        color: #ffc107;
+      }
+      section {
+        margin-top: 2rem;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      }
+      h2 {
+        color: #0d6efd;
+        border-bottom: 2px solid #0d6efd;
+        margin-bottom: 1rem;
+      }
+      ul.simple-list {
+        list-style: disc inside;
+      }
+      #welcome {
+        display: grid;
+        gap: 1rem;
+        align-items: center;
+      }
+      #welcome img {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        max-height: 320px;
+      }
+      .label {
+        font-weight: bold;
+        color: #0d6efd;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #212529;
+        color: white;
+        margin-top: 2rem;
+      }
+      @media (max-width: 768px) {
+        nav.container {
+          flex-direction: column;
+        }
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">MyPortfolio</div>
+        <ul>
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#future-goals">Future Goals</a></li>
+          <li><a href="#personal-side">Personal Side</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="welcome">
+        <p class="welcome-text">Hello! Welcome To My Digital Portfolio</p>
+        <img
+          src="https://via.placeholder.com/800x320/000000/FFFFFF?text=My+Photo"
+          alt=" click here to see photo"
+        />
+      </section>
+
+      <section id="about-me">
+        <h2>About Me</h2>
+        <ul>
+          <li><span class="label">Name:</span> Nilesh Goswami</li>
+          <li><span class="label">Location:</span> Dahanu, Palghar</li>
+          <li>
+            <span class="label">Education:</span> Electronics and Computer
+            Science, Mumbai University
+          </li>
+          <li>
+            <span class="label">Languages Known:</span> English, Hindi, Marathi, Gujarati
+          </li>
+        </ul>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul class="simple-list">
+          <li>
+            Project: <strong>Mini Drone</strong>
+            
+              <li>Got 3rd prize in SSC Board 2021</li>
+              <li>Participation in Eureka Pitching Competition</li>
+            
+            
+          </li>
+          <li>
+            Certifications:
+            <ul>
+              <li>Innovative Trends in VLSI and Semiconductor Engineering</li>
+              <li>Introduction to Unix</li>
+              <li>Robotics</li>
+              <li>Iot and Electronics Cource</li>
+              <li>Power Bi</li>
+              <li>C++ Programming-Beginners</li>
+              <li>Semiconductors</li>
+              <li>Combinational Digital Circuit</li>
+              <li>Sequential Digital Circuit</li>
+              <li>Digital Electronics</li>
+              <li>Introduction to MPLAB X IDE</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="future-goals">
+        <h2>Future Goals</h2>
+        <ul class="simple-list">
+          <li>
+            To complete my degree with strong skills in Electronics and Computer
+            Science.
+          </li>
+          <li>To work on innovative projects and contribute to society.</li>
+          <li>To continuously learn and grow as a professional.</li>
+        </ul>
+      </section>
+
+      <section id="personal-side">
+        <h2>Personal Side</h2>
+        <h3>Hobbies/Interests</h3>
+        <ul class="simple-list">
+          <li>Running</li>
+          <li>Playing</li>
+          <li>Cooking</li>
+        </ul>
+
+        <h3>Favourite Books</h3>
+        <ul class="simple-list">
+          <li>Krishnas Key</li>
+         
+         
+        </ul>
+
+        <h3>Favourite Role Model</h3>
+        <ul class="simple-list">
+          <li>
+           My Parents
+          </li>
+        </ul>
+
+        <h3>Favourite Websites</h3>
+        <ul class="simple-list">
+          <li>GITHUB</li>
+        </ul>
+
+        <h3>Favourite Startups</h3>
+        <ul class="simple-list">
+          <li>MEESHO</li>
+          <li>Zepto</li>
+          <li>Grow</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <h3>Programming Languages:</h3>
+        <ul class="simple-list">
+          <li>C, C++, MATLAB</li>
+        </ul>
+        <h3>Hardware:</h3>
+        <ul class="simple-list">
+          <li>Arduino, ESP8266, Sensors (Pulse, DHT11), OLED Display</li>
+        </ul>
+        <h3>IoT Platforms:</h3>
+        <ul class="simple-list">
+          <li>ThingSpeak, Blynk, MQTT</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy;2025 Nilesh Goswami  |
+      <a href="https://github.com/" target="_blank" style="color: #ffc107"
+        >GitHub</a
+      >
+      |
+      <a href="mailto:nilesh.goswami@example.com" style="color: #ffc107"
+        >Contact Me</a
+      >
+    </footer>
+  </body>
+</html>
