@@ -71,12 +71,15 @@
         gap: 1rem;
         align-items: center;
       }
+
+      /* Cropping the image */
       #welcome img {
         width: 100%;
+        height: 300px; /* You can adjust the height */
+        object-fit: cover; /* Ensures the image covers the area without stretching */
         border-radius: 12px;
-        object-fit: cover;
-        max-height: 320px;
       }
+
       .label {
         font-weight: bold;
         color: #0d6efd;
@@ -117,7 +120,7 @@
     <main class="container">
       <section id="welcome">
         <p class="welcome-text">Hello! Welcome To My Digital Portfolio</p>
-        <!-- Nilesh.jpeg image added here -->
+        <!-- Cropped Image -->
         <img src="Nilesh.jpeg" alt="Nilesh's Photo" />
       </section>
 
